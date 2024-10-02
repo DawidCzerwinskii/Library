@@ -1,21 +1,19 @@
 public class Library {
     public static void main(String[] args) {
-        final String appName = "Biblioteka b0.1";
+        final String appName = "Biblioteka v0.1";
 
-        String title = "W pustyni i w puszczy";
-        String author = "Henryk Sienkiewicz";
-        int releaseYear = 1911;
-        int pages = 320;
-        String publisher = "Wydawnictwo Greg";
-        String isbn = "978-83-66462-81-6";
+        Book book1 = new Book();
+        book1.title = "W pustyni i w puszczy";
+        book1.author = "Henryk Sienkiewicz";
+        book1.releaseYear = 1911;
+        book1.pages = 320;
+        book1.publisher = "Wydawnictwo Greg";
+        book1.isbn = "978-83-66462-81-6";
+        String bookDesc = book1.title + ", " + book1.author + ", " + book1.releaseYear + ", " + book1.pages + "s, " +
+                book1.publisher + ", " + book1.isbn;
 
         System.out.println(appName);
         System.out.println("Książki dostępne w bibliotece: ");
-        System.out.println(title);
-        System.out.println(author);
-        System.out.println(releaseYear);
-        System.out.println(pages);
-        System.out.println(publisher);
-        System.out.println(isbn);
+        System.out.println(bookDesc);
     }
 }
